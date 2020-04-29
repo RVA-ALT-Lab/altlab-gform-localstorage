@@ -3,7 +3,7 @@
 Plugin Name: ALT Lab Gravity Forms to localStorage
 Plugin URI:  https://github.com/
 Description: Reading and writing GF fields to localStorage for use in later forms
-Version:     1.3
+Version:     1.71
 Author:      ALT Lab (Matt Roberts)
 Author URI:  http://altlab.vcu.edu
 License:     GPL2
@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', 'prefix_load_scripts');
 
 function prefix_load_scripts() {                           
     $deps = array('jquery');
-    $version= '1.3';
+    $version= '1.71';
     $in_footer = true;    
     wp_enqueue_script('prefix-main-js', plugin_dir_url( __FILE__) . 'js/localstore-main.js', $deps, $version, $in_footer); 
     wp_enqueue_style( 'prefix-main-css', plugin_dir_url( __FILE__) . 'css/localstore-main.css');
