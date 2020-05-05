@@ -21,8 +21,8 @@ function prefix_load_scripts() {
     $deps = array('jquery');
     $version= '1.71';
     $in_footer = true;    
-    wp_enqueue_script('prefix-main-js', plugin_dir_url( __FILE__) . 'js/localstore-main.js', $deps, $version, $in_footer); 
-    wp_enqueue_style( 'prefix-main-css', plugin_dir_url( __FILE__) . 'css/localstore-main.css');
+    wp_enqueue_script('localstore-main-js', plugin_dir_url( __FILE__) . 'js/localstore-main.js', $deps, $version, $in_footer); 
+    wp_enqueue_style( 'localstore-main-css', plugin_dir_url( __FILE__) . 'css/localstore-main.css');
 }
 
 
